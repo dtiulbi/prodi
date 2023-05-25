@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="robots" content="index,follow" />
+        <title>💡 Help Center  | We are here to help!</title>
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="350" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000000" />
+        <!-- customize this visual settings -->
+         
+        <!-- icon css-->
+        <link rel="stylesheet" href="assets/elagent-icon/style.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+        <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css">
+        <link rel="stylesheet" href="assets/animation/animate.css">
+        <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--link -->
+        
+        <style>
+            @font-face {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 200;
+                font-display: swap;
+                src: url('Inter-Bold.woff2?v=3.15') format('woff2'),
+                    url('Inter-Bold.woff?v=3.15') format('woff');
+            }
+            :root {
+                --f-default-family: -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Helvetica, Arial, sans-serif,
+                    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+                --f-headline-family: 'Inter', sans-serif;
+                --c-body-background: #10b3d6;
+                --c-nav-bg: #111111;
+                --c-nav-font: #ffffff;
+                --c-search-headline: #ffffff;
+                --c-search-placeholder: #ffffff;
+                --c-search-placeholder-clip: #ffffff;
+                --c-search-text: #ffffff;
+                --g-search-gradient: linear-gradient(
+                    125deg,
+                    #10b3d6 0%,
+                    #1d2746  70%,
+                    #1932b4 150%
+                );
+                --g-moz-search-gradient: -moz-linear-gradient(
+                    125deg,
+                    #10b3d6 10%,
+                    #1c1127 70%,
+                    #1932b4 150%
+                );
+                --g-webkit-search-gradient: -webkit-linear-gradient(
+                    125deg,
+                    #10b3d6 10%,
+                    #1c0e2b 70%,
+                    #1932b4 150%
+                );
+                --c-search-bg-fallback: rgb(248, 248, 248);
+                --icon-search: url('./search.svg');
+                --c-content-headline: #111;
+                --c-show-more-text: #111;
+                --c-show-more-text-hover: blue;
+                --c-box-bg: #efefef;
+                --c-box-bg-hover: rgba(0, 0, 0, 0.1);
+                --c-box-text: #111;
+                --c-footer-bg: rgba(10, 10, 10, 0.1);
+                --c-footer-text: black;
+                --c-modal-bg: #fff;
+                --c-modal-text: #000000;
+                --c-modal-a-text: #4043c1;
+                --c-modal-a-text-hover: blue;
+                --c-bg-modal-close: #eee;
+            }
+        </style>
+        <script>
+            var GITHUB_ISSUES_LINK =
+                'https://api.github.com/repos/dtiulbi/questionsinfra/issues';
+            var GITHUB_ACCEPTED_CREATORS = ['christyuda'];
+            var GITHUB_ACCEPTED_LABELS = ['approved'];
+            var UNCATEGORIZED_LABEL = 'restUncategorizedEntries';
+            var ALL_LABEL = 'allEntries';
+            var ENTRIES_PER_VIEW = 3;
+            var MAX_PAGES = 40;
+            var NUM_RESULTS_PER_PAGE = 30;
+        </script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#navbar-example3" data-offset="86" data-scroll-animation="true" class="doc">
+        <div id="preloader">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="round_spinner">
+                    <div class="spinner"></div>
+                    <div class="text">
+                        <img src="img/mobile_icon4.png" alt="">
+                        <h4><span>HelpDesk</span>ULBI</h4>
+                    </div>
+                </div>
+                <h2 class="head">Did You Know?</h2>
+            </div>
+        </div>
+        
+        <section class="breadcrumb_area">
+            <img class="p_absolute bl_left" src="img/v.svg" alt="">
+            <img class="p_absolute bl_right" src="img/home_one/b_leaf.svg" alt="">
+            <img class="p_absolute star" src="img/home_one/banner_bg.png" alt="">
+            <img class="p_absolute wave_shap_one" src="img/blog-classic/shap_01.png" alt="">
+            <img class="p_absolute wave_shap_two" src="img/blog-classic/shap_02.png" alt="">
+            <img class="p_absolute one wow fadeInRight" src="img/home_one/b_man_two.png" alt="">
+            <img class="p_absolute two wow fadeInUp" data-wow-delay="0.2s" src="img/home_one/flower.png" alt="">
+        </section>
+        <section><div class="search" id="js-search">
+            <div class="container">
+                
+                <div class="col-12">
+                    <form action="#" id="search-form">
+                        <input
+                            type="text"
+                            id="js-search-bar"
+                            maxlength="30"
+                            class="search-bar"
+                            placeholder="Silahkan Ketik Disini?"
+                            aria-label="Search"
+                            autocomplete="off"
+                        />
+                    </form>
+                </div>
+                <div class="col-12 results" id="js-search-results"></div>
+            </div>
+        </div></section>
+        
+        <div class="container content" id="js-content">
+            <div class="grid-wrapper">
+                <div class="col-4">
+                    <h3>Popular</h3>
+                    <div
+                        class="content-box"
+                        data-label="popular"
+                        data-order="newest"
+                    ></div>
+                </div>
+                <div class="col-4">
+                    <h3>How To</h3>
+                    <div
+                        class="content-box"
+                        data-label="howto"
+                        data-order="newest"
+                    ></div>
+                </div>
+                <div class="col-4">
+                    <h3>Recent</h3>
+                    <div
+                        class="content-box"
+                        data-label=""
+                        data-order="newest"
+                    ></div>
+                </div>
+                
+                
+                
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="col-6">
+                    <span>DTI| Direktorat Teknologi Informasi 2023</span>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+        <div class="overlay" id="js-overlay"></div>
+        <div class="modal" id="js-modal">
+            <div class="modal-close" id="js-modal-close">&#x2715;</div>
+            <h3 class="modal-title" id="js-modal-title"></h3>
+            <div class="modal-content" id="js-modal-content"></div>
+            <div class="modal-footer">
+                <span>Tidak dapat menemukan solusi?</span>
+                <span class="modal-chat-btn" id="js-letschat">Silakan menghubungi kami jika Anda memiliki pertanyaan lebih lanjut atau memerlukan bantuan lebih lanjut +62 895-0187-0519</span>
+            </div>
+        </div>
+
+    <!--Script-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/pre-loader.js"> </script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.wavify.js"></script>
+    <script src="js/anchor.js"></script>
+    <script src="assets/mailchimp/plugins.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+    <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+    <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+    
+</html>
